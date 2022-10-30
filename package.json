@@ -10,9 +10,16 @@
     "@types/node": "^16.11.66",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-redux": "^8.0.4",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.8",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "save-dev": "^0.0.1-security",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .ts,.tsx"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +47,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-modal": "^3.13.1",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "eslint-plugin-react": "^7.31.10"
   }
 }

@@ -1,0 +1,163 @@
+.add-expense {
+    width: 50%;
+    margin: auto;
+}
+
+.add-form {
+    background: #71ccca;
+    box-shadow: 20px 20px 60px #60adac, -20px -20px 60px #82ebe8;
+    margin: 6px 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 60vh;
+}
+
+.form-item {
+    margin: 12px 0px;
+    width: 70%;
+    padding: 4px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.form-item label {
+    background-color: lightgrey;
+    padding: 2px 12px;
+    border-radius: 4px;
+}
+
+.form-item input {
+    font-size: 16px;
+    border: none;
+    width: 70%;
+    outline: none;
+    padding-left: 6px;
+}
+
+.category-container-parent {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.category {
+    position: relative;
+    width: 40%;
+}
+
+.category-dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 4px;
+    padding-left: 6px;
+}
+
+.category-dropdown:hover {
+    cursor: pointer;
+}
+
+.category-dropdown i {
+    display: flex;
+    align-items: center;
+    padding-right: 4px;
+}
+
+.category-dropdown i:hover {
+    cursor: pointer;
+}
+
+.category-container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 4px;
+}
+
+.category-item {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.category-item label {
+    padding-left: 0.35rem;
+}
+
+.category-item label:hover {
+    cursor: pointer;
+}
+
+.category-item img {
+    height: 32px;
+    margin-right: 20px;
+}
+
+.form-add-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-add-button:hover {
+    cursor: pointer;
+}
+
+.form-add-button div {
+    display: flex;
+    border: 1px solid black;
+    padding: 2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-add-button div label:hover {
+    cursor: pointer;
+}
+
+.form-add-button div i {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .form-item {
+        width: 100%;
+    }
+
+    .form-item input {
+        width: 70%;
+    }
+
+    .amount-input {
+        width: 50% !important;
+    }
+
+    .category {
+        width: 80%;
+    }
+
+    .add-expense {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .add-expense {
+        width: 100%;
+    }
+}
